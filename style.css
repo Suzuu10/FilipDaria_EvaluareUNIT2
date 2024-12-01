@@ -1,0 +1,113 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4b3b8f, #8561c5);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: rgba(75, 59, 143, 0.8);
+    border-bottom: 4px solid #392c6b;
+    animation: slide-down 1s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #f3e9ff;
+}
+
+header p {
+    font-size: 1rem;
+    margin: 5px 0 0;
+    color: #ddd;
+}
+
+main div {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fade-in 1.5s ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #5c4a8f;
+}
+
+table th, table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+table th {
+    color: #f3e9ff;
+}
+
+table td {
+    color: #ddd;
+}
+
+#slideshow img {
+    width: 50%;
+    display: none;
+    border-radius: 10px;
+}
+
+#slideshow img:first-child {
+    display: block;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fade-in {
+    animation: fade-in 1.5s ease-in-out;
+}
+
+#diagrama-retelei img {
+    width: 400px;
+    height: auto; /* Menține proporțiile */
+    max-width: 100%;
+}
